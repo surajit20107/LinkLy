@@ -1,14 +1,14 @@
 entrypoint = "main.go"
 run = ["go", "run", "."]
 
-modules = ["go-1.21"]
+modules = ["go-1.25.1"]
 
 [env]
 GOPATH="$REPL_HOME/gopath"
 
 [nix]
 channel = "stable-24_05"
-packages = ["air"]
+packages = ["air", "go"]
 
 [gitHubImport]
 requiredFiles = [".replit"]
